@@ -1,0 +1,135 @@
+ПРАВИЛЬНОЕ РЕШЕНИЕ НИЖЕ
+# Задание 1
+day = int(input("Введите номер дня недели (1-7): "))
+
+days_of_week = {
+    1: "понедельник",
+    2: "вторник",
+    3: "среда",
+    4: "четверг",
+    5: "пятница",
+    6: "суббота",
+    7: "воскресенье")
+}
+
+if day in days_of_week:
+    print(days_of_week[day])
+else:
+    print("Некорректный номер дня недели."
+
+# Задание 2
+month = int(input("Введите номер месяца (1-12): "))
+
+months_of_year = {
+    1: "январь",
+    2: "февраль",
+    3: "март",
+    4: "апрель",
+    5: "май",
+    6: "июнь",
+    7: "июль",
+    8: "август",
+    9: "сентябрь",
+    10: "октябрь",
+    11: "ноябрь",
+    12: "декабрь"
+}
+
+if month in months_of_year:
+    print(months_of_year[month])
+else:
+    print("Некорректный номер месяца.")
+
+# Задание 3
+number = float(input("Введите число: "))
+
+if number > 0:
+    print("Number is positive")
+elif number < 0:
+    print("Number is negative")
+else:
+    print("Number is equal to zero")
+
+# Задание 4
+number1 = float(input("Введите первое число: "))
+number2 = float(input("Введите второе число: "))
+
+if number1 == number2:
+    print("Числа равны.")
+else:
+    min_number = min(number1, number2)
+    max_number = max(number1, number2)
+    print(f"Числа в порядке возрастания: {min_number}, {max_number}")
+
+ПРАВИЛЬНОЕ РЕШЕНИЕ СНИЗУ
+
+#Задание 1 Пользователь вводит с клавиатуры номер дня недели
+(1-7). Необходимо вывести на экран названия дня недели. Например, если 1, то на экране надпись понедельник, 2 — вторник и т. д
+day = input("Введите число от 1 до 7:")
+
+if day=="1":
+    print("Понедельник")
+elif day=="2":
+    print("Вторник")
+elif day=="3":
+    print("Среда")
+elif day=="4":
+    print("Четверг")
+elif day=="5":
+    print("Пятница")
+elif day=="6":
+    print("Суббота")
+elif day=="7":
+    print("Воскресенье")
+else:
+    print("Вы ввели некорректный номер")
+
+#Задание 2 Пользователь вводит с клавиатуры номер месяца
+(1-12). Необходимо вывести на экран название месяца.
+Например, если 1, то на экране надпись январь, 2 — февраль и т.д.
+
+day = input("Введите число от 1 до 12:")
+if day=="1":
+    print("Январь")
+elif day=="2":
+    print("Февраль")
+elif day=="3":
+    print("Март")
+elif day=="4":
+    print("Апрель")
+elif day=="5":
+    print("Май")
+elif day=="6":
+    print("Июнь")
+elif day=="7":
+    print("Июль")
+elif day=="8":
+    print("Август")
+elif day=="9":
+    print("Сентябрь")
+elif day=="10":
+    print("Октябрь")
+elif day=="11":
+    print("Ноябрь")
+elif day=="12":
+    print("Декабрь")
+else:
+    print("Вы ввели некорректный номер")
+
+ #Задание 3
+ 
+numb = int(input("Введите число"))
+if numb>0:
+    print("Number is positive")
+else:
+    print("Number is equal to zero")
+
+#Задание 4
+
+numb1 = int(input("Введите число 1"))
+numb2 = int(input("Введите число 2"))
+if numb1 == numb2:
+    print("Числа равны")
+else:
+    print(min(numb1,numb2),max(numb1,numb2))
+
